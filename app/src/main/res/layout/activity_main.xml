@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/bg"-->
+<!--        android:layout_width="456dp"-->
+<!--        android:layout_height="776dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.511"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.511"-->
+<!--        app:srcCompat="@drawable/bg" />-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="479dp"
+        android:layout_height="819dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="70dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/inconsolata"
+        android:singleLine="false"
+        android:text="Nama"
+        android:textColor="#222831"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <TextView
+        android:id="@+id/nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/inconsolata"
+        android:text="NIM"
+        android:textColor="#222831"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/sub_nama"
+        app:layout_constraintTop_toBottomOf="@+id/sub_nama" />
+
+    <TextView
+        android:id="@+id/hobi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/inconsolata"
+        android:text="Hobi"
+        android:textColor="#222831"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/sub_nim"
+        app:layout_constraintTop_toBottomOf="@+id/sub_nim" />
+
+    <TextView
+        android:id="@+id/deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/inconsolata"
+        android:text="Tentang saya"
+        android:textColor="#222831"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/sub_hobi"
+        app:layout_constraintTop_toBottomOf="@+id/sub_hobi" />
+
+    <TextView
+        android:id="@+id/sub_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inconsolata_bold"
+        android:text="Dino Damara Ramadhan"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/nama"
+        app:layout_constraintTop_toBottomOf="@+id/nama" />
+
+    <TextView
+        android:id="@+id/sub_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inconsolata_bold"
+        android:text="A11.2019.11709"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/nim"
+        app:layout_constraintTop_toBottomOf="@+id/nim" />
+
+    <TextView
+        android:id="@+id/sub_hobi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inconsolata_bold"
+        android:text="Travelling, Futsal, Gaming"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/hobi"
+        app:layout_constraintTop_toBottomOf="@+id/hobi" />
+
+    <TextView
+        android:id="@+id/sub_deskripsi"
+        android:layout_width="314dp"
+        android:layout_height="84dp"
+        android:fontFamily="@font/inconsolata_bold"
+        android:text="Saya adalah mahasiswa S1 Teknik Informatika Universitas Dian Nuswantoro Semarang. Saat ini saya berada di semester 5."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/deskripsi"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsi" />
+
+    <ImageButton
+        android:id="@+id/map"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="35dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center|start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/map" />
+
+    <ImageButton
+        android:id="@+id/telpon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="35dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center|start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/map"
+        app:srcCompat="@drawable/call" />
+
+    <ImageButton
+        android:id="@+id/email"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="35dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center|start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/mail" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="185dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/foto"
+        app:civ_border_color="#000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/inconsolata_bold"
+        android:text="alamat"
+        android:textColor="#222831"
+        app:layout_constraintEnd_toEndOf="@+id/map"
+        app:layout_constraintStart_toStartOf="@+id/map"
+        app:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <TextView
+        android:id="@+id/sub_telpon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/inconsolata_bold"
+        android:text="telpon"
+        android:textColor="#222831"
+        app:layout_constraintEnd_toEndOf="@+id/telpon"
+        app:layout_constraintStart_toStartOf="@+id/telpon"
+        app:layout_constraintTop_toBottomOf="@+id/telpon" />
+
+    <TextView
+        android:id="@+id/sub_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/inconsolata_bold"
+        android:text="email"
+        android:textColor="#222831"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
